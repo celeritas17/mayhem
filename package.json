@@ -1,0 +1,10 @@
+{
+	"name": "mayhem",
+	"description": "Terrible algorithms for your everyday needs",
+	"author": "Ryan Koven <celeritas@ucla.edu>",
+	"version": "0.0.1",
+	"dependencies": {
+		"underscore": "1.6.x"
+	},
+	"engine": "node >= 0.4.1"
+}
