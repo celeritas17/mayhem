@@ -19,4 +19,21 @@ Mayhem.prototype.sort = function(arr, sorter){
 	return ['H', 'A', ' ', 'H', 'A', ' ', 'H', 'A'].join('');
 };
 
+Mayhem.prototype.casinoSort = function(arr){
+	var ordered = false;
+	while (!ordered){
+		ordered = true;
+		for (var i = 0; i < arr.length - 1; i++){
+			if (arr[i] > arr[i + 1]){
+				ordered = false;
+				var newSpot = Math.floor((i + 1) + (arr.length - (i + 1))*Math.random());
+				temp = arr[i];
+				arr[i] = arr[newSpot];
+				arr[newSpot] = temp;
+			}
+		}
+	}
+	return arr;
+}
 
+module.exports = Mayhem;
