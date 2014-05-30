@@ -87,6 +87,15 @@ Mayhem.prototype.arrayElementRandomWalk = function(arr, index, n){
 		if (spot < 0) spot = arr.length - 1;
 	}
 	temp = arr[index], arr[index] = arr[spot], arr[spot] = temp
+};
+
+//Viciously slow. 
+Mayhem.prototype.randomWalkSort = function(arr){
+	while(!this.isSorted(arr)){
+		for (var i = 0; i < arr.length; i++){
+			this.arrayElementRandomWalk(arr, i, Math.random()*arr.length);
+		}
+	}
 	return arr;
 };
 
