@@ -4,3 +4,4 @@ var Mayhem = require('../mayhem'),
 
 console.log(mayhem.twistAndFoldSort(list));
 console.log(mayhem.casinoSort(list));
+console.log(mayhem.arrayElementRandomWalk([1, 2, 3], 0, 3));

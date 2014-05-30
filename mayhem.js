@@ -75,4 +75,19 @@ Mayhem.prototype.twistAndFoldSort = function(arr){
 	return arr;
 };
 
+// Send an array element on a (1-dimensional) random walk of n steps.
+// Whatever is in the spot that the walking element lands on is moved to 
+// the walking element's original spot. 
+Mayhem.prototype.arrayElementRandomWalk = function(arr, index, n){
+	var temp,
+			index = index%arr.length,
+	    spot = index;
+	for (var i = 0; i < n; i++){
+		spot = (spot += Math.random() < 0.5 ? 1 : -1) % arr.length;
+		if (spot < 0) spot = arr.length - 1;
+	}
+	temp = arr[index], arr[index] = arr[spot], arr[spot] = temp
+	return arr;
+};
+
 module.exports = Mayhem;
