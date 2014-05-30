@@ -36,6 +36,8 @@ Mayhem.prototype.casinoSort = function(arr){
 	return arr;
 };
 
+// "twist" (or "rotate") an array.
+// e.g., [1, 2, 3] -> [3, 1, 2]
 Mayhem.prototype.twist = function(arr){
 	var i = 0;
 	var temp1 = arr[i];
@@ -52,6 +54,7 @@ Mayhem.prototype.nTwist = function(arr, n){
 	}
 };
 
+// e.g., arr = [1, 2, 3, 4, 5], upTo = 3 produces [4, 3, 2, 1, 5]
 Mayhem.prototype.foldUpTo = function(arr, upTo){
 	for (var i = 0, j = upTo; i < j; i++, j--){
 		temp = arr[i];
@@ -62,6 +65,8 @@ Mayhem.prototype.foldUpTo = function(arr, upTo){
 
 /* Bogo-type sorts */
 
+// "Twist" and "fold" (producing a kind of "shuffle") the array a random 
+// number of times until it's sorted. 
 Mayhem.prototype.twistAndFoldSort = function(arr){
 	while(!this.isSorted(arr)){
 		this.nTwist(arr, Math.floor(Math.random()*arr.length));
