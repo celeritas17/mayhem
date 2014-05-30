@@ -1,6 +1,6 @@
 #Mayhem.js
 
-A collection of the slowest, stupidest, most terrible and horrible algorithms for sorting, searching, and other things. 
+A collection of the slowest, most surreal, possibly unhelpful algorithms for sorting and searching, and everything and nothing. 
 
-####Go ahead, use them in production.
+####*"Wisely and slow. They stumble that run fast."*
 
