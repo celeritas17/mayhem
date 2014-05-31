@@ -116,15 +116,15 @@ Mayhem.prototype.neverSort = function(arr){
 
 Mayhem.prototype.surrealSort = function(arr){
 	return this.casinoSort(['y', 'm']).join('') + 
-				 this.casinoSort([' ', 'm']).join('') +
-				 this.casinoSort(['n', 'i']).join('') + 
-				 this.casinoSort(['d']).join('') + 
-				 this.casinoSort([' ']).join('') + 
-				 this.casinoSort(['s', 'i']).join('') + 
-				 this.casinoSort([' ', 'g']).join('') +
-				 this.casinoSort(['o']).join('') + 
-				 this.casinoSort(['n', 'i']).join('') +
-				 this.casinoSort(['g']); 
+				this.casinoSort([' ', 'm']).join('') +
+				this.casinoSort(['n', 'i']).join('') + 
+				this.casinoSort(['d']).join('') + 
+				this.casinoSort([' ']).join('') + 
+				this.casinoSort(['s', 'i']).join('') + 
+				this.casinoSort([' ', 'g']).join('') +
+				this.casinoSort(['o']).join('') + 
+				this.casinoSort(['n', 'i']).join('') +
+				this.casinoSort(['g']); 
 };
 
 module.exports = Mayhem;
