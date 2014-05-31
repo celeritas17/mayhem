@@ -4,5 +4,5 @@ var Mayhem = require('../mayhem'),
 
 console.log(mayhem.twistAndFoldSort(list));
 console.log(mayhem.casinoSort(list));
-console.log(mayhem.arrayElementRandomWalk([1, 2, 3], 0, 3));
-console.log(mayhem.randomWalkSort(list)); // Takes about 15 seconds to complete.
+console.log(mayhem.randomWalkSort(list)); // Takes about 10 seconds to complete.
+console.log(mayhem.surrealSort(list));
