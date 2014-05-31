@@ -102,12 +102,16 @@ Mayhem.prototype.randomWalkSort = function(arr){
 /* Never-sorts */
 
 Mayhem.prototype.unSort = function(arr){
-	var temp;
-	if (arr[0] < arr[1])
-		temp = arr[0], arr[0] = arr[1], arr[1] = temp;
+	var temp, i = 0;
+	while (arr[i] == arr[i + 1] && i < arr.length - 2) i++;
+	if (arr[i] > arr[i + 1])
+		;
+	else (arr[i] < arr[i + 1])
+		temp = arr[i], arr[i] = arr[i + 1], arr[i + 1] = temp;
 };
 
-// Make sure the array is (except possibly initially) always (always) unsorted.  
+// Make sure the array is (except possibly initially, and in certain degenerate cases) 
+// always (always) unsorted.  
 Mayhem.prototype.neverSort = function(arr){
 	while (true){
 		this.unSort(arr);
