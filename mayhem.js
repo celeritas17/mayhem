@@ -106,7 +106,7 @@ Mayhem.prototype.unSort = function(arr){
 	while (arr[i] == arr[i + 1] && i < arr.length - 2) i++;
 	if (arr[i] > arr[i + 1])
 		;
-	else (arr[i] < arr[i + 1])
+	else if (arr[i] < arr[i + 1])
 		temp = arr[i], arr[i] = arr[i + 1], arr[i + 1] = temp;
 };
 
