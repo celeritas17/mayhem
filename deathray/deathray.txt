@@ -25,7 +25,7 @@ deathray beam;
 deathray, deathray,
 burn so clean
 
-dreadful, deadful 
+dreadful, dreadful 
 deathray beam;
 light my way,
 burn everything
