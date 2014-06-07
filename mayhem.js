@@ -56,7 +56,7 @@ Mayhem.prototype.nTwist = function(arr, n){
 
 // e.g., arr = [1, 2, 3, 4, 5], upTo = 3 produces [4, 3, 2, 1, 5]
 Mayhem.prototype.foldUpTo = function(arr, upTo){
-	for (var i = 0, j = upTo; i < j; i++, j--){
+	for (var i = 0, j = upTo%arr.length; i < j; i++, j--){
 		temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
