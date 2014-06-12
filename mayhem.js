@@ -99,6 +99,15 @@ Mayhem.prototype.randomWalkSort = function(arr){
 	return arr;
 };
 
+/* May-be sorts */
+
+// Are you trying to sort the integers 
+// 0, 1, 17, 81, 94 101?
+// Well, aren't you lucky.
+var luckySort = function(arr){
+	return [0, 1, 17, 81, 94, 101];
+}
+
 /* Never-sorts */
 
 Mayhem.prototype.unSort = function(arr){
