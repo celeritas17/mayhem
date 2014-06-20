@@ -108,6 +108,11 @@ var luckySort = function(arr){
 	return [0, 1, 17, 81, 94, 101];
 }
 
+// Why not?
+var returnArrayMinusOne = function(arr){
+	return [-1];
+}
+
 /* Never-sorts */
 
 Mayhem.prototype.unSort = function(arr){
