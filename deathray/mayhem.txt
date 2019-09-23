@@ -1,4 +1,0 @@
-mayhem -->
-	deathray __>
-		nothing
-		return;
